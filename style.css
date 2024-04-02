@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: blue;
+    font-family: "poppins";
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto 10px auto;
+    width: 1200px;
+    max-height: 100px;
+    color: azure;
+    font-size: 40px;
+}
+.icon{
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,290px);
+    grid-template-rows:repeat(4, 130px);
+    gap: 15px;
+    grid-template-areas:
+    "masonry responsive overlap overlap"
+    "masonry fluid explicitlyplaced negativespace"
+    "flexiblebreadth masonry2 explicitlyplaced masonry3"
+    "domorder masonry2 namedtracks namedtracks";
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.item{
+    background-color: azure;
+    color: rgb(49, 49, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+.masonry{
+    grid-area: masonry;
+}
+.responsive{
+    grid-area: responsive;
+}
+.overlap{
+    grid-area: overlap;
+}
+.fluid{
+    grid-area: fluid;
+}
+.explicitlyplaced{
+    grid-area: explicitlyplaced;
+}
+.negativespace{
+    grid-area: negativespace;
+}
+.masonry2{
+    grid-area: masonry2;
+}
+.masonry3{
+    grid-area: masonry3;
+}
+.domorder{
+    grid-area: domorder;
+}
+.namedtracks{
+    grid-area: namedtracks;
+}
