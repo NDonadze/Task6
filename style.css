@@ -7,7 +7,7 @@ body{
     background-color: blue;
     font-family: "poppins";
 }
-.title{
+.title-box{
     display: flex;
     justify-content: space-between;
     margin: 50px auto 10px auto;
@@ -21,18 +21,17 @@ body{
     height: 25px;
     margin-left: 5px;
 }
-.grid{
+.grid-container{
     display: grid;
     grid-template-columns: repeat(4,290px);
-    grid-template-rows:repeat(4, 130px);
     gap: 15px;
     grid-template-areas:
     "masonry responsive overlap overlap"
     "masonry fluid explicitlyplaced negativespace"
     "flexiblebreadth masonry2 explicitlyplaced masonry3"
     "domorder masonry2 namedtracks namedtracks";
-    max-width: 1200px;
-    margin: 0 auto;
+     margin: 0 auto;
+     justify-content: center;
 }
 .item{
     background-color: azure;
@@ -41,6 +40,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: large;
+    min-height: 130px;
 }
 .masonry{
     grid-area: masonry;
